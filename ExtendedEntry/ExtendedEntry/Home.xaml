@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExtendedEntry;assembly=ExtendedEntry"
+             x:Class="ExtendedEntry.Home">
+  <StackLayout Orientation="Vertical" Padding="10, 20">
+    <local:CustomEntry x:Name="entry" Placeholder="Default" MaxLength="200" KeyboardType="1" Validations="[{Key: 'Required', Value: true}, {Key: 'MinLength', Value: 7}, {Key: 'Type', Value: 'email'}]" />
+  </StackLayout>
+</ContentPage>
